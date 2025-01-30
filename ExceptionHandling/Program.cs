@@ -18,7 +18,7 @@ namespace ExceptionHandling
             // Configure the HTTP request pipeline.
 
             // change development/production mode from 
-            // solution > properties > Debug > Open Debug Lunch profile UI > ASPNETCORE_ENVIRONMENT = Development/Production
+            // project > properties > Debug > Open Debug Lunch profile UI > ASPNETCORE_ENVIRONMENT = Development/Production
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
