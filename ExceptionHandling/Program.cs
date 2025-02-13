@@ -9,20 +9,18 @@ namespace ExceptionHandling
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            //builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
 
-            // change development/production mode from 
-            // project > properties > Debug > Open Debug Lunch profile UI > ASPNETCORE_ENVIRONMENT = Development/Production
+            // change development/production mode from launchSettings.json
             if (app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                //app.UseSwagger();
+                //app.UseSwaggerUI();
 
                 app.UseDeveloperExceptionPage();
             }

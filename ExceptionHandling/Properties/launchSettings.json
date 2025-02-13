@@ -3,10 +3,10 @@
     "ExceptionHandling": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "swagger",
+      //"launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
+        "ASPNETCORE_ENVIRONMENT": "Production" // Development / Production
+      }, 
       "dotnetRunMessages": true,
       "applicationUrl": "http://localhost:5015"
     },
